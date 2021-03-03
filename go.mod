@@ -12,7 +12,6 @@ require (
 	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/hashicorp/hcl/v2 v2.9.0 // indirect
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.4.4
-	github.com/hashicorp/terraform-plugin-test/v2 v2.1.2 // indirect
 	github.com/hashicorp/yamux v0.0.0-20200609203250-aecfd211c9ce // indirect
 	github.com/mitchellh/copystructure v1.1.1 // indirect
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
