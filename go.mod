@@ -2,7 +2,7 @@ module github.com/tailsdotcom/terraform-provider-scram
 
 go 1.17
 
-require github.com/hashicorp/terraform-plugin-sdk/v2 v2.10.0
+require github.com/hashicorp/terraform-plugin-sdk/v2 v2.10.1
 
 require (
 	github.com/agext/levenshtein v1.2.3 // indirect
