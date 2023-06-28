@@ -87,10 +87,18 @@ func resourcePasswordCreate(ctx context.Context, d *schema.ResourceData, m inter
 	storedKeyB64 := base64.StdEncoding.EncodeToString(storedKey[:])
 	serverKeyB64 := base64.StdEncoding.EncodeToString(serverKey)
 
-	d.SetId(saltB64)
-	d.Set("salt", saltB64)
-	d.Set("stored_key", storedKeyB64)
-	d.Set("server_key", serverKeyB64)
+	if d.SetId(saltB64); err != nil {
+		return diag.FromErr(err)
+	}
+	if err = d.Set("salt", saltB64); err != nil {
+		return diag.FromErr(err)
+	}
+	if err = d.Set("stored_key", storedKeyB64); err != nil {
+		return diag.FromErr(err)
+	}
+	if err = d.Set("server_key", serverKeyB64); err != nil {
+		return diag.FromErr(err)
+	}
 	return nil
 }
 
