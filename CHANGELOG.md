@@ -1,3 +1,8 @@
+## 0.2.0
+
+Update dependencies.
+Update CI.
+
 ## 0.1.2
 
 Update dependencies.
