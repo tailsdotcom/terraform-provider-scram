@@ -1,0 +1,5 @@
+# Code owners for this repository
+# This will automatically assign reviewers to PRs so that they get attention
+
+# Overall
+*		@tailsdotcom/infrastructure-engineers
